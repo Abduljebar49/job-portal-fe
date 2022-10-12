@@ -1,13 +1,73 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>JobPortal</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- All css files are included here. -->
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/iconfont.min.css">
+  <link rel="stylesheet" href="assets/css/vendor/helper.css">
+  <!-- <link rel="stylesheet" href="assets/css/plugins/plugins.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+  <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+  <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <!-- Modernizr JS -->
+  <script src="assets/js/vendor/modernizr-3.10.0.min.js"></script>
+
 </head>
+
 <body>
   <app-root></app-root>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132749328-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132749328-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      '../../../connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '223900361524792');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=223900361524792&amp;ev=PageView&amp;noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!--Start of Zendesk Chat Script-->
+  <script type="text/javascript">
+    window.$zopim || (function (d, s) {
+      var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+        d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+          z.set.
+            _.push(o)
+        }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+      $.src = "https://v2.zopim.com/?3kYiQe6pwvLdslIO7gS1vT0Yxk7Lh9Jf"; z.t = +new Date; $.
+        type = "text/javascript"; e.parentNode.insertBefore($, e)
+    })(document, "script");
+  </script>
+
 </body>
+
 </html>
