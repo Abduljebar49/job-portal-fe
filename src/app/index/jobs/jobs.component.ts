@@ -12,4 +12,12 @@ export class JobsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  jobList=[
+    {
+      label:'Featured'
+      
+    }
+  ]
+
 }
