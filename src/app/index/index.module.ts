@@ -11,6 +11,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
