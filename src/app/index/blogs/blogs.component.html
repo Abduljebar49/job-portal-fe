@@ -25,302 +25,31 @@
                 <div class="blog-wrapper">
                     <div class="row">
 
-                        <div class="col-12">
+                        <div class="card col-12 mt-4 mb-1 p-2" *ngFor="let blog of blogs">
                             <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
+                            <div class="single-blog-post mb-2 mb-xs-50">
                                 <div class="blog-image">
                                     <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog4.jpg" alt="">
+                                        <img src="{{blog.image}}" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
                                     <ul class="post-meta">
-                                        <li><span class="feature-post">Sticky post </span></li>
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
+                                        <!-- <li><span class="feature-post">Sticky post </span></li> -->
+                                        <li><i class="lnr lnr-user"></i><a href="#">{{blog.author}}</a></li>
+                                        <li><i class="lnr lnr-file-add"></i><a href="#">{{blog.category}}</a></li>
+                                        <li><i class="lnr lnr-clock"></i><a href="#"> {{blog.date}}</a></li>
                                     </ul>
                                     <h4 class="title">
-                                        <a href="blog-details.html">10 Best Facebook Pages of All Time About
-                                            Freelancer</a>
+                                        <a href="blog-details.html">{{blog.title}}</a>
                                     </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
+                                    <p class="blog-desc">{{blog.description}}</p>
                                     <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
                                             class="lnr lnr-chevron-right"></i></a>
                                 </div>
                             </div>
                             <!-- Single Blog End -->
                         </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image blog-gallery-slider">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog8.jpg" alt="">
-                                    </a>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog5.jpg" alt="">
-                                    </a>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog6.jpg" alt="">
-                                    </a>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog7.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#">Oct 24, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">The Reason Why Software Developer Repeats As ‘Best
-                                            Job’</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog9.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">News & Update</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Oct 24, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">7 Answers to the Most Frequently Asked Questions
-                                            About Job</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">10 Best Facebook Pages of All Time About
-                                            Freelancer</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">The Question Everyone Working in Job Should Know to
-                                            Answer</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">Miley Cyrus and Job: 10 Surprising Things They Have
-                                            in Common</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">What Hollywood Can Teach Us About Job</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post mb-90 mb-xs-50">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog10.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">15 Secretly Funny People Working in Job</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
-                        <div class="col-12">
-                            <!-- Single Blog Start -->
-                            <div class="single-blog-post">
-                                <div class="blog-image">
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog6.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-content">
-                                    <ul class="post-meta">
-                                        <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                        <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                        <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
-                                    </ul>
-                                    <h4 class="title">
-                                        <a href="blog-details.html">All the Stats, Facts, and Data You’ll Ever Need to
-                                            Know</a>
-                                    </h4>
-                                    <p class="blog-desc">
-                                        The news comes just after "full stack software developer" was named the
-                                        fastest-growing job of 2018 in a data analysis conducted by another site and
-                                        LinkedIn's annual Emerging Jobs report said blockchain developer is the top
-                                        sought-after position among all occupations in what is becoming an increasingly
-                                        familiar pattern.
-                                    </p>
-                                    <a href="blog-details.html" class="ht-btn theme-btn theme-btn-two">View more <i
-                                            class="lnr lnr-chevron-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Blog End -->
-                        </div>
-
                     </div>
                 </div>
             </div>
