@@ -23,13 +23,13 @@
 
             <div class="col-lg-8">
                 <div class="blog-wrapper">
-                    <div class="row">
+                    <div class="row" *ngIf="blogs">
 
                         <div class="card col-12 mt-4 mb-1 p-2" *ngFor="let blog of blogs">
                             <!-- Single Blog Start -->
                             <div class="single-blog-post mb-2 mb-xs-50">
                                 <div class="blog-image">
-                                    <a href="blog-details.html">
+                                    <a [routerLink]="blog.key">
                                         <img src="{{blog.image}}" alt="">
                                     </a>
                                 </div>

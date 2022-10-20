@@ -32,7 +32,11 @@ const routes: Routes = [
       {
         path:'blogs/detail',
         component:BlogDetailComponent
-      }
+      },
+      {
+        path:'blogs/:key',
+        component:BlogDetailComponent
+      },      
     ]
   },
   {

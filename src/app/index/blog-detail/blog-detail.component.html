@@ -7,9 +7,9 @@
                     <ul class="page-breadcrumb color-white">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Career Advice</a></li>
-                        <li>The Question Everyone Working in Job Should Know to Answer</li>
+                        <li>{{blog?.title}}</li>
                     </ul>
-                    <h1>The Question Everyone Working in Job Should Know to Answer</h1>
+                    <h1>{{blog?.title}}</h1>
                 </div>
             </div>
         </div>
@@ -30,24 +30,16 @@
                         <!-- Single Blog Start -->
                         <div class="single-blog-post mb-90 mb-xs-50">
                             <div class="blog-image">
-                                <img src="assets/images/blog/blog4.jpg" alt="">
+                                <img src="{{blog?.image}}" alt="">
                             </div>
                             <div class="blog-content">
                                 <ul class="post-meta">
-                                    <li><i class="lnr lnr-user"></i><a href="#">Hien Tran</a></li>
-                                    <li><i class="lnr lnr-file-add"></i><a href="#">Job Skills</a></li>
-                                    <li><i class="lnr lnr-clock"></i><a href="#"> Sep 25, 2019</a></li>
+                                    <li><i class="lnr lnr-user"></i><a href="#">{{blog?.author}}</a></li>
+                                    <li><i class="lnr lnr-file-add"></i><a href="#">{{blog?.category}}</a></li>
+                                    <li><i class="lnr lnr-clock"></i><a href="#"> {{blog?.date}}</a></li>
                                 </ul>
-                                <p>The news comes just after “full stack software developer” was named the
-                                    fastest-growing job of 2018 in a data analysis conducted by another site and
-                                    LinkedIn’s annual Emerging Jobs report said blockchain developer is the top
-                                    sought-after position among all occupations in what is becoming an increasingly
-                                    familiar pattern.</p>
-                                <p>In the new 2019 U.S. News report, software developer topped a bunch of
-                                    health-care-related positions, though statistician came in at No. 2.The media site
-                                    uses criteria such as salary, challenges, the match of talent and skills, room to
-                                    advance and a satisfying work-life balance to compile its ranking. In describing the
-                                    positon of software developer, the site said:</p>
+                                <p>{{blog?.description}}</p>
+                                <p>{{blog?.description}}</p>
                                 <blockquote>
                                     <p>The best software developers are creative and have the technical expertise to
                                         carry out innovative ideas. You might expect software developers to sit at their
@@ -57,18 +49,9 @@
                                         <span><strong>Ronald Korman</strong></span>
                                     </p>
                                 </blockquote>
-                                <p>On the salary front, the top 25 percent of developers made $128,960 in 2017, while
-                                    the bottom 25 percent made $77,710. The position graded average in upward mobility
-                                    and stress level, while flexibility was rated above average.</p>
-                                <p>For any non-developers reading this article who want to ascend to the best job in the
-                                    new year, here’s the site’s advice from real-life developer Sam Schillace: Write
-                                    code. Early and often. Good engineers are curious and want to learn how to build new
-                                    things and are also constantly trying to find new and interesting things they
-                                    haven’t built yet. If you don’t feel passionate about trying out some new technology
-                                    or language you’ve heard, or you aren’t obsessed with solving that problem or
-                                    building that app you’ve thought of, you probably shouldn’t be a programmer.</p>
-                                <p>The site also ranked the top 10 technology jobs</p>
-                                <ul class="blog-dt-list">
+                                <p>{{blog?.description}}</p>
+                                <p>{{blog?.description}}</p>
+                                <!-- <ul class="blog-dt-list">
                                     <li>Software Developer</li>
                                     <li>Computer Systems Analyst</li>
                                     <li>T Manager</li>
@@ -79,7 +62,7 @@
                                     <li>Computer Systems Administrator</li>
                                     <li>Computer Support Specialist</li>
                                     <li>Computer Programmer</li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         <!-- Single Blog End -->
@@ -90,7 +73,7 @@
                             <h3 class="title">Recent Jobs For You:</h3>
                             <div class="row">
 
-                                <div class="col-lg-12 mb-20">
+                                <div class="col-md-6 mb-20">
                                     <!-- Single Job Start  -->
                                     <div class="single-job style-two">
                                         <div class="info-top">
@@ -143,7 +126,7 @@
                                     <!-- Single Job End -->
                                 </div>
 
-                                <div class="col-lg-12 mb-20">
+                                <div class="col-md-6 mb-20">
                                     <!-- Single Job Start  -->
                                     <div class="single-job style-two">
                                         <div class="info-top">
@@ -195,7 +178,7 @@
                                     <!-- Single Job End -->
                                 </div>
 
-                                <div class="col-lg-12 mb-20">
+                                <div class="col-md-6 mb-20">
                                     <!-- Single Job Start  -->
                                     <div class="single-job style-two">
                                         <div class="info-top">
@@ -247,7 +230,7 @@
                                     <!-- Single Job End -->
                                 </div>
 
-                                <div class="col-lg-12 mb-20">
+                                <div class="col-md-6 mb-20">
                                     <!-- Single Job Start  -->
                                     <div class="single-job style-two">
                                         <div class="info-top">
